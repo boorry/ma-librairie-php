@@ -12,7 +12,7 @@ $db->createDatabase($nomBase);
 
 $db->useDatabase($nomBase);
 
-$fichier = __DIR__ . "/schemas/gestion_ecole.php";
+$fichier = __DIR__ . "/schema/schema_campagne.php";
 
 $schema = new Schema($db);
 
