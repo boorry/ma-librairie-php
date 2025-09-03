@@ -4,7 +4,7 @@ class CrudGenerator {
     private $db;
     private $outputDir;
 
-    public function __construct(Database $db, $outputDir = __DIR__ . '/generated'){
+    public function __construct(Database $db, $outputDir = __DIR__ . '/cli/fichierDAO/'){
         if (!$db instanceof Database) {
             throw new InvalidArgumentException("L'argument \$db doit être une instance de Database.");
         }
